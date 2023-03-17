@@ -1,20 +1,20 @@
 <meta name="description" content="{{ if .Params.Subtitle }}{{ .Params.Subtitle }}{{else}}{{ .Site.Params.Subtitle }}{{ end }}" />
 
-<title itemprop="name">{{ default .Site.Title .Title }}</title>
-<meta property="og:title" content="{{ default .Site.Title .Title }}" />
-<meta name="twitter:title" content="{{ default .Site.Title .Title }}" />
-<meta itemprop="name" content="{{ default .Site.Title .Title }}" />
+<title itemprop="name">{{ default .Site.Title .Title }} - teriell art portfolio</title>
+<meta property="og:title" content="{{ default .Site.Title .Title }} - teriell art portfolio" />
+<meta name="twitter:title" content="{{ default .Site.Title .Title }} - teriell art portfolio" />
+<meta itemprop="name" content="{{ default .Site.Title .Title }} - teriell art portfolio" />
 <meta property="og:site_name" content="{{ .Site.Params.sitename }}" />
-<meta name="description" content="{{ default .Site.Params.Subtitle .Params.Subtitle }}" />
-<meta itemprop="description" content="{{ default .Site.Params.Subtitle .Params.Subtitle }}" />
-<meta property="og:description" content="{{ default .Site.Params.Subtitle .Params.Subtitle }}" />
-<meta name="twitter:description" content="{{ default .Site.Params.Subtitle .Params.Subtitle }}" />
+<meta name="description" content="{{ if .Params.Subtitle }}{{ .Params.Subtitle }}{{else}}{{ .Site.Params.Subtitle }}{{ end }}" />
+<meta itemprop="description" content="{{ if .Params.Subtitle }}{{ .Params.Subtitle }}{{else}}{{ .Site.Params.Subtitle }}{{ end }}" />
+<meta property="og:description" content="{{ if .Params.Subtitle }}{{ .Params.Subtitle }}{{else}}{{ .Site.Params.Subtitle }}{{ end }}" />
+<meta name="twitter:description" content="{{ if .Params.Subtitle }}{{ .Params.Subtitle }}{{else}}{{ .Site.Params.Subtitle }}{{ end }}" />
 <base href="{{ .RelPermalink }}">
 <link rel="canonical" href="{{ .Permalink }}" itemprop="url" /> 
 <meta name="url" content="{{ .Permalink }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
 <meta name="twitter:url" content="{{ .Permalink }}" />
-<meta name="twitter:card" content="summary" />
+<meta name="twitter:card" content="{{ if .Params.Subtitle }}{{ .Params.Subtitle }}{{else}}{{ .Site.Params.Subtitle }}{{ end }}" />
 {{ with .Site.Params.Author }}
     <meta name="twitter:creator" content="{{ . }}" />
 {{ end }}

@@ -1,3 +1,21 @@
+<div class="footer-middle">
+    <span></span>
+    <div class="menu">
+        {{ if and .Site.Menus .Site.Menus.footer }}
+            {{ $lastIndex := sub (len .Site.Menus.footer) 1 }}
+            {{ $currentPage := .RelPermalink }}
+            {{ range $i, $el := .Site.Menus.footer }}
+            {{ $active := "" }}
+            {{ if eq $el.URL $currentPage }}
+            {{ $active = "active" }}
+            {{ end }}
+            <a class="{{ $active }}" href="{{ $el.URL }}">{{ $el.Name }}</a>
+            {{ if ne $i $lastIndex }} / {{ end }}
+            {{ end }}
+        {{ end }}
+    </div>
+    <span></span>
+</div>
 <div class="content has-text-centered">
     <p>
         {{ with .Site.Params.Copyright }}

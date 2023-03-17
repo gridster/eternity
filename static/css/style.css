@@ -21,6 +21,7 @@
 .welcome-title {
     text-align: center;
     font-size: 2em;
+    color: var(--main);
 }
 
 .welcome-subtitle {
@@ -38,6 +39,17 @@
     justify-content: center;
     position: absolute;
     z-index: -9;
+}
+
+.footer-middle {
+    width: 100%;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    z-index: -9;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .socials {
@@ -312,6 +324,10 @@ section .column img {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.metaP {
+
 }
 
 .exif {

@@ -4,7 +4,7 @@
         {{ if $tags }}
             <div class="center column slide-meta-el">
                 <div class="slide-tags">
-                    {{ $specials := slice "work" "archive" }}
+                    {{ $specials := slice "work" "archive" "about" }}
                     {{ with .ctx.Site.Params.SpecialPages }}
                         {{ $specials = . }}
                     {{ end }}

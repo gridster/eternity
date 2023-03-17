@@ -27,7 +27,35 @@
         font-style: italic;
     }
 
+    @font-face {
+        font-family: 'Space Mono Regular';
+        src: url({{ "fonts/Space_Mono/SpaceMono-Regular.ttf" | absURL }}) format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Space Mono Bold';
+        src: url({{ "fonts/Space_Mono/SpaceMono-Bold.ttf" | absURL }}) format('truetype');
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Space Mono Italic';
+        src: url({{ "fonts/Space_Mono/SpaceMono-Italic.ttf" | absURL }}) format('truetype');
+        font-weight: normal;
+        font-style: italic;
+    }
+
+    @font-face {
+        font-family: 'Space Mono Bold Italic';
+        src: url({{ "fonts/Space_Mono/SpaceMono-BoldItalic.ttf" | absURL }}) format('truetype');
+        font-weight: bold;
+        font-style: italic;
+    }
+
     body {
-        font-family: "Open Sans Regular";
+        font-family: "Space Mono Regular";
     }
 </style>
