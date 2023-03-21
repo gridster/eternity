@@ -10,6 +10,7 @@
 	{{ partial "navbar.html" . }}
 	<div class="hero-body has-text-centered">
 		<div class="container">
+			<img src="{{ .Site.Params.Image | absURL }}" loading="lazy" style="margin-bottom: 20px; border-radius: 12px;"/>
 			<div class="enter">
 				<button onclick="window.location.href='{{ relref . .Site.Params.Homepage }}'"
 				class="button is-white is-large is-outlined">enter</button>
@@ -34,9 +35,7 @@
 					{{ end }}
 				</div>
 			{{ end }}
-			{{ range $d := .Params.Desc }}
-				<p>{{ $d }}</p>
-			{{ end }}
+				<p>Explore the art of teriell</p>
 		</div>
 	</div>
 	<div class="welcome-end">
